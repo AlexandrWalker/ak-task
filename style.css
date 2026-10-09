@@ -1,0 +1,241 @@
+.privacy-page.layout1000 {
+  max-width: 75rem;
+}
+
+.privacy-page {
+  padding: 0 0.9375rem;
+}
+
+.site-main.privacy-page h1 {
+  padding: 1.875rem 0;
+
+  font-family: Roboto;
+  font-weight: 800;
+  font-size: 2.1875rem;
+  text-align: left;
+}
+
+.site-main.privacy-page p {
+  margin-bottom: 1.25rem;
+
+  font-family: Roboto;
+  line-height: 1.2;
+  color: #373A41;
+}
+
+.site-main.privacy-page a {
+  font-family: Roboto;
+  color: #373A41;
+}
+
+.site-main.privacy-page a:hover {
+  text-decoration: underline;
+}
+
+.site-main.privacy-page ul {
+  margin-bottom: 1.25rem;
+}
+
+.site-main.privacy-page span {
+  display: block;
+  margin-bottom: 1rem;
+
+  font-family: Roboto;
+  font-size: 1rem;
+  color: #373A41;
+}
+
+.privacy-page .entry-content div {
+  margin-bottom: 1.25rem;
+  padding-top: 0.625rem;
+
+  font-family: Roboto;
+  font-weight: 800;
+  font-size: 1.5625rem;
+  line-height: 1.8125rem;
+  color: #1D4D92;
+}
+
+.privacy-page .entry-content li {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+
+  font-family: Roboto;
+  line-height: 1.1875;
+  color: #373A41;
+}
+
+.privacy-page .entry-content li::before {
+  content: "";
+  width: 0.6875rem;
+  height: 0.6875rem;
+  border-radius: 50%;
+  background-color: #1D4D92;
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+
+  .privacy-page .entry-content div {
+    padding-top: 0;
+    margin-bottom: 1.0416rem;
+
+    font-size: 1.7361rem;
+  }
+
+  .site-main.privacy-page p {
+    margin-bottom: 1.38rem;
+  }
+
+  .site-main.privacy-page ul {
+    margin-bottom: 1.38rem;
+  }
+
+  .privacy-page .entry-content li {
+    gap: 1.0416rem;
+    margin-bottom: 0.972rem;
+  }
+
+  .privacy-page .entry-content span {
+    margin-bottom: 0.972rem;
+  }
+}
+
+.cookie-plate {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transition: transform 0.3s;
+
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+}
+
+.cookie-plate__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  padding: 1.875rem 1.25rem 1.25rem 1.25rem;
+  max-width: 24.375rem;
+  margin: 0 1.25rem 13.3125rem 0;
+  pointer-events: all;
+}
+
+.cookie-plate__text {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #373A41;
+}
+
+.cookie-plate__text a {
+  font-family: Roboto;
+  color: #FF9E45;
+  text-decoration: none;
+}
+
+.cookie-plate__text a:hover {
+  text-decoration: underline;
+}
+
+.cookie-plate__btn {
+  width: 100%;
+  height: 3.125rem;
+  background: #1D4D92;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  border: 0;
+  padding: 0.9375rem;
+  transition: all 0.3s;
+
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: #FFFFFF;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cookie-plate__btn:hover {
+  box-shadow: 0px 11px 40px rgba(245, 245, 245, 0.54);
+  background: #FF9E45;
+  color: #000;
+}
+
+@media (max-width: 767px) {
+
+  .cookie-plate__inner {
+    gap: 1.041rem;
+    gap: 0.9375rem;
+    padding: 1.041rem;
+    padding: 0.9375rem;
+    margin: 0.694rem;
+    margin: 0.625rem;
+  }
+
+  .cookie-plate__text {
+    font-size: 1rem;
+    font-size: 0.875rem;
+  }
+}
+
+.form__block {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form__checkbox {}
+
+.form__checkbox-input {
+  visibility: hidden;
+  position: absolute;
+  top: -99999px;
+  left: -999999px;
+}
+
+.form__checkbox-input:checked+.form__checkbox-label .form__checkbox-item {
+  background-color: #FF9E45;
+}
+
+.form__checkbox-label {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  width: fit-content;
+
+  cursor: pointer;
+}
+
+.form__checkbox-item {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 6px solid #1D4D92;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.form__checkbox-text {
+  padding-top: 7px;
+
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #373A41;
+  text-align: left;
+}
